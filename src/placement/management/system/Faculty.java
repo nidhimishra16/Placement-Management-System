@@ -4,9 +4,9 @@
  */
 package placement.management.system;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import javax.swing.*;
 public class Faculty extends JFrame implements ActionListener{
       JButton  addCompany,backButton,addStudent,deleteStudent,updateStudent,viewStudent,viewFaculty,updateFaculty,viewCompany,viewInterview,viewStatus;
     Faculty() {
@@ -61,6 +61,10 @@ public class Faculty extends JFrame implements ActionListener{
         viewInterview.addActionListener(this); // Fixed: viewInterview instead of view
         image.add(viewInterview);
         
+        viewInterview = new JButton("View Applications");
+        viewInterview.setBounds(220, 300, 490, 60); 
+        viewInterview.addActionListener(this); // Fixed: viewInterview instead of view
+        image.add(viewInterview);
         /* viewFaculty = new JButton("View Faculty");
         viewFaculty.setBounds(395, 220, 150, 40); 
         viewFaculty.addActionListener(this); // Fixed: viewCompany instead of view
